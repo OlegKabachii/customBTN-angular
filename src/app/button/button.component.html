@@ -1,0 +1,8 @@
+<button
+  type="button"
+  class="btn"
+  [ngClass]="[config.color, config.size, config.border ? 'border' : '']"
+  [ngStyle]="styles"
+>
+  {{ config.title }}
+</button>
