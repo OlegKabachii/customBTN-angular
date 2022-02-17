@@ -11,7 +11,7 @@ export class ButtonComponent {
   // Colors => ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'];
   // Sizes => ['small', 'medium', 'large'];
 
-  @Input() config: { title: string, size: string, color: string, border: boolean } = {
+  @Input() config: { title: string, size: string, color: string, border: boolean, [key: string]: any } = {
     title: 'MyBTN',
     size: 'medium',
     color: 'primary',
